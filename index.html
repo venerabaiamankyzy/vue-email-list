@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
     <!-- META TAGS -->
     <meta charset="UTF-8" />
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- TITLE -->
-    <title>Vue To-Do List</title>
+    <title>Email</title>
 
     <link
       rel="stylesheet"
@@ -28,6 +28,13 @@
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./css/style.css" />
 
+    <!-- AXIOS -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"
+      defer
+    ></script>
+
     <!-- Vue JS -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
@@ -39,7 +46,9 @@
     <div id="root">
       <div class="container">
         <ul>
-          <li>{{message}}</li>
+          <li v-for="(indirizzoEmail,index) in indirizziEmail">
+            {{indirizzoEmail}}
+          </li>
         </ul>
       </div>
     </div>
