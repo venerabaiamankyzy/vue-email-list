@@ -8,7 +8,7 @@ const app = createApp({
     };
   },
 
-  methods: {
+  mounted: {
     stampaEmail() {
       for (let i = 0; i < 10; i++) {
         axios
