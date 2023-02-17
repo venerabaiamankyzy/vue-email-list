@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <!-- META TAGS -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- TITLE -->
+    <title>Email</title>
+
+    <!-- AXIOS -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"
+      defer
+    ></script>
+
+    <!-- Vue JS -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <!-- MAIN JS -->
+    <script type="text/javascript" src="../Bonus/js/main.js" defer></script>
+  </head>
+
+  <body>
+    <div id="root">
+      <div class="container">
+        <ul>
+          <li v-for="(indirizzoEmail,index) in indirizziEmail">
+            {{indirizzoEmail}}
+          </li>
+        </ul>
+        <button @click="stampaEmail()" type="button">Press Button</button>
+      </div>
+    </div>
+  </body>
+</html>
